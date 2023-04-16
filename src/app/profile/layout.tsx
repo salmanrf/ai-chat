@@ -1,8 +1,13 @@
+"use client";
+
+import ChatSidebar from "@/components/chats/ChatSidebar";
+import { Flex } from "@chakra-ui/react";
+
 export default function ProfileLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div id="profile" style={{ minHeight: "100vh" }}>
-      <h1>AI Chat</h1>
+    <Flex w={"100vw"} minH={"100vh"}>
+      <ChatSidebar />
       {children}
-    </div>
+    </Flex>
   );
 }
